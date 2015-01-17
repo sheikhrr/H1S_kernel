@@ -81,9 +81,9 @@ static int g_nMajor = 0;
 
 
 /* Needs to be included after the global variables because they use them */
-#include <tspdrvOutputDataHandler.c>
+#include "tspdrvOutputDataHandler.c"
 #ifdef CONFIG_HIGH_RES_TIMERS
-    #include <VibeOSKernelLinuxHRTime.c>
+    #include "VibeOSKernelLinuxHRTime.c"
 #else
     #include <VibeOSKernelLinuxTime.c>
 #endif
